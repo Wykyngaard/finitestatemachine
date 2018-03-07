@@ -1,0 +1,34 @@
+room = 1
+previous = 1
+while(true){
+  if(room == 1){show("Entryway");
+    a = choose("There are five doors. Which door will you walk through?,"one","two","three","four","five");
+    if(a == 1){room = 2,previous = 1;}
+    else if(a == 2){room = 3,previous = 1;}
+    else if(a == 3){room = 4,previous = 1;}
+    else if(a == 4){room = 5,previous = 1;}
+    else if(a == 5){room = 6,previous = 1;}
+  }else if(room == 2){show("Study");
+    b = choose("There is the door behind (1) or a door ahead (2). Which door will you walk through?","one","two");
+    if(b == 1){room = 1,previous = 2;}
+    else if(b == 2){room = 3,previous = 2;}
+  }else if(room == 3){show("Bedroom");
+    if(previous = 1){
+      c = choose("There is the door behind (1), a door to the right (2), and a door to the left (3). Which door will you walk   through?","one","two","three");
+      if(c == 1){room = 1,previous = 1;}
+      else if(c == 2){room = 2,previous = 2;}
+      else if(c == 3){room = 4,previous = 4;}
+    }else if(previous = 2){
+      d = choose("There is the door behind (1), a door ahead (2), and a door to the left (3). Which door will you walk through?","one","two","three");
+        if(d == 1){room = 2,previous = 2;}
+        else if(d == 2){room = 4,previous = 4}
+        else if(d == 3){room = 1,previous = 1}
+  }else if(room == 4){show("Dining room");
+  
+  }else if(room == 5){show("Kitchen");
+  
+  }else if(room == 6){show("Billiard room");
+  
+  }else if(room == 7){show("Lounge");
+  }}}
+}
